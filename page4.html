@@ -177,4 +177,171 @@
     </ul>
   </main>
 </body>
+
+    <section id="quiz-section" style="background-color: #e9eef3; padding: 20px; border-radius: 10px; margin: 40px auto; max-width: 900px;">
+    <h2>🧪 Test Your Roblox Scripting Knowledge!</h2>
+
+    <form id="quizForm">
+      <!-- Questions -->
+      <div class="question"><p><strong>1. What service should you use to store server-only scripts securely?</strong></p>
+        <label><input type="radio" name="q1" value="b"> ServerScriptService</label><br>
+        <label><input type="radio" name="q1" value="a"> Workspace</label><br>
+        <label><input type="radio" name="q1" value="c"> ReplicatedStorage</label>
+      </div>
+
+      <div class="question"><p><strong>2. What does a debounce help prevent?</strong></p>
+        <label><input type="radio" name="q2" value="b"> Overuse of functions due to spamming</label><br>
+        <label><input type="radio" name="q2" value="a"> Memory leaks</label><br>
+        <label><input type="radio" name="q2" value="c"> GUI errors</label>
+      </div>
+
+      <div class="question"><p><strong>3. Which service allows communication between client and server?</strong></p>
+        <label><input type="radio" name="q3" value="b"> RemoteEvent</label><br>
+        <label><input type="radio" name="q3" value="a"> TweenService</label><br>
+        <label><input type="radio" name="q3" value="c"> Lighting</label>
+      </div>
+
+      <div class="question"><p><strong>4. What is the correct method to get a service?</strong></p>
+        <label><input type="radio" name="q4" value="b"> game:GetService("Players")</label><br>
+        <label><input type="radio" name="q4" value="a"> game.Players()</label><br>
+        <label><input type="radio" name="q4" value="c"> getService("Players")</label>
+      </div>
+
+      <div class="question"><p><strong>5. Which data type is used to store multiple values?</strong></p>
+        <label><input type="radio" name="q5" value="c"> Table</label><br>
+        <label><input type="radio" name="q5" value="a"> Number</label><br>
+        <label><input type="radio" name="q5" value="b"> Boolean</label>
+      </div>
+
+      <div class="question"><p><strong>6. What keyword defines a function in Lua?</strong></p>
+        <label><input type="radio" name="q6" value="a"> function</label><br>
+        <label><input type="radio" name="q6" value="b"> def</label><br>
+        <label><input type="radio" name="q6" value="c"> func</label>
+      </div>
+
+      <div class="question"><p><strong>7. Which object is used to create smooth animations?</strong></p>
+        <label><input type="radio" name="q7" value="b"> TweenService</label><br>
+        <label><input type="radio" name="q7" value="a"> PathfindingService</label><br>
+        <label><input type="radio" name="q7" value="c"> SoundService</label>
+      </div>
+
+      <div class="question"><p><strong>8. Where should GUI elements be stored for a player?</strong></p>
+        <label><input type="radio" name="q8" value="a"> StarterGui</label><br>
+        <label><input type="radio" name="q8" value="b"> Workspace</label><br>
+        <label><input type="radio" name="q8" value="c"> ServerStorage</label>
+      </div>
+
+      <div class="question"><p><strong>9. What type of script runs on the client side?</strong></p>
+        <label><input type="radio" name="q9" value="c"> LocalScript</label><br>
+        <label><input type="radio" name="q9" value="a"> Script</label><br>
+        <label><input type="radio" name="q9" value="b"> ModuleScript</label>
+      </div>
+
+      <div class="question"><p><strong>10. Which storage is shared between server and client?</strong></p>
+        <label><input type="radio" name="q10" value="b"> ReplicatedStorage</label><br>
+        <label><input type="radio" name="q10" value="a"> ServerStorage</label><br>
+        <label><input type="radio" name="q10" value="c"> Lighting</label>
+      </div>
+
+      <div class="question"><p><strong>11. What does a BindableEvent allow you to do?</strong></p>
+        <label><input type="radio" name="q11" value="a"> Fire events within the same environment</label><br>
+        <label><input type="radio" name="q11" value="b"> Send data to the DataStore</label><br>
+        <label><input type="radio" name="q11" value="c"> Communicate with the server from client</label>
+      </div>
+
+      <div class="question"><p><strong>12. How do you connect a function to an event?</strong></p>
+        <label><input type="radio" name="q12" value="b"> event.OnServerEvent:Connect(myFunction)</label><br>
+        <label><input type="radio" name="q12" value="a"> connect(event, myFunction)</label><br>
+        <label><input type="radio" name="q12" value="c"> event = myFunction</label>
+      </div>
+
+      <div class="question"><p><strong>13. What does `:WaitForChild("Part")` do?</strong></p>
+        <label><input type="radio" name="q13" value="c"> Waits until "Part" exists before continuing</label><br>
+        <label><input type="radio" name="q13" value="a"> Deletes the part</label><br>
+        <label><input type="radio" name="q13" value="b"> Pauses the entire script</label>
+      </div>
+
+      <div class="question"><p><strong>14. What’s the main purpose of ModuleScripts?</strong></p>
+        <label><input type="radio" name="q14" value="a"> Reusable functions and organization</label><br>
+        <label><input type="radio" name="q14" value="b"> Creating GUIs</label><br>
+        <label><input type="radio" name="q14" value="c"> Storing parts</label>
+      </div>
+
+      <div class="question"><p><strong>15. What event is triggered when a player joins the game?</strong></p>
+        <label><input type="radio" name="q15" value="b"> Players.PlayerAdded</label><br>
+        <label><input type="radio" name="q15" value="a"> game.OnPlayerJoin</label><br>
+        <label><input type="radio" name="q15" value="c"> Workspace.ChildAdded</label>
+      </div>
+
+      <button type="button" onclick="checkAnswers()" style="margin-top: 20px; padding: 10px 15px; background-color: #004aad; color: white; border: none; border-radius: 5px;">Submit Quiz</button>
+    </form>
+
+    <div id="quizResult" style="margin-top: 20px; font-weight: bold;"></div>
+  </section>
+
+  <script>
+    function checkAnswers() {
+      const correctAnswers = {
+        q1: "b", q2: "b", q3: "b", q4: "b", q5: "c",
+        q6: "a", q7: "b", q8: "a", q9: "c", q10: "b",
+        q11: "a", q12: "b", q13: "c", q14: "a", q15: "b"
+      };
+
+      let score = 0;
+      for (let q in correctAnswers) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        if (selected && selected.value === correctAnswers[q]) {
+          score++;
+        }
+      }
+
+      const resultBox = document.getElementById("quizResult");
+      resultBox.textContent = `✅ You got ${score} out of 15 correct!`;
+
+      resultBox.style.color = score >= 12 ? "green" : score >= 8 ? "orange" : "red";
+    }
+  </script>
+  <!-- Floating quiz arrow -->
+  <div id="quiz-indicator" style="
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #004aad;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    z-index: 9999;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+  ">
+    ↓ Quiz
+  </div>
+
+  <script>
+
+    document.getElementById("quiz-indicator").addEventListener("click", () => {
+      const quiz = document.getElementById("quiz-section");
+      quiz.scrollIntoView({ behavior: "smooth" });
+    });
+
+    window.addEventListener('scroll', () => {
+      const quiz = document.getElementById('quiz-section');
+      const indicator = document.getElementById('quiz-indicator');
+      const quizTop = quiz.getBoundingClientRect().top;
+
+      if (quizTop < window.innerHeight * 0.5) {
+        indicator.style.opacity = '0';
+        indicator.style.pointerEvents = 'none';
+      } else {
+        indicator.style.opacity = '1';
+        indicator.style.pointerEvents = 'auto';
+      }
+    });
+  </script>
+
+
+
+
 </html>
